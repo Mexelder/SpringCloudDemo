@@ -18,7 +18,6 @@ public class CarService {
     private final CarRepository carRepository;
 
     public List<CarResponse> getALlCars() {
-
         List<Car> cars = carRepository.findAll();
         return cars.stream().map(this::mapCarToCarResponse).toList();
     }
