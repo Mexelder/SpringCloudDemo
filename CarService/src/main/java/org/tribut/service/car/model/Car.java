@@ -15,7 +15,6 @@ import java.math.BigDecimal;
 @Builder
 @Data
 public class Car {
-
     @Id
     private String id;
     private String model;
